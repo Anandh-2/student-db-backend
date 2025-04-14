@@ -6,7 +6,7 @@ dotenv.config();
 const studentRoutes = require('./routes/studentRoutes')
 
 const app = express();
-app.use(cors({origin:'http://localhost:3000'}));
+app.use(cors({origin:'https://stu-database.netlify.app'}));
 app.use(express.json());
 app.use('/',studentRoutes);
 
